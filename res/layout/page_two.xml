@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/page_two"
+    android:background="@drawable/back">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="163dp"
+        android:background="@android:color/transparent" >
+
+        <Button
+            android:id="@+id/button_relig"
+            android:layout_width="316dp"
+            android:layout_height="174dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/selector_page2_relig"
+            android:text="@string/religious"
+            android:textSize="@dimen/font_size_page2"
+            android:textColor="@android:color/white"
+           	android:drawableTop="@drawable/relige" />
+        <Button
+            android:id="@+id/button_service"
+            android:layout_marginRight="3dp"
+            android:paddingTop="36dp"
+            android:layout_width="316dp"
+            android:layout_height="174dp"
+            android:layout_toRightOf="@id/button_relig"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_page2_service"
+			android:drawableTop="@drawable/service"            
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_page2"
+            android:text="@string/service" />
+        <WebView
+            android:id="@+id/webview_slideshow"
+            android:layout_marginRight="3dp"
+            android:layout_width="316dp"
+            android:layout_height="174dp"
+            android:layout_below="@id/button_relig"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+             />
+        <Button
+            android:id="@+id/button_medicine"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="316dp"
+            android:layout_height="174dp"
+            android:layout_toRightOf="@id/webview_slideshow"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/selector_page2_midicine"
+			android:drawableTop="@drawable/medicine"            
+            android:layout_below="@id/button_service"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_page2"
+            android:text="@string/medicine" />
+        <Button
+            android:id="@+id/button_events"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="316dp"
+            android:layout_height="174dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_page2_event"
+			android:drawableTop="@drawable/event"            
+            android:layout_below="@id/webview_slideshow"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_page2"
+            android:text="@string/events" />
+        <Button
+            android:id="@+id/button_bank"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="316dp"
+            android:layout_height="174dp"
+            android:background="@drawable/selector_page2_bank"
+			android:drawableTop="@drawable/bank"            
+            android:layout_below="@id/button_medicine"
+            android:layout_toRightOf="@id/button_events"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_page2"
+            android:text="@string/banks" />
+        
+        <Button
+            android:id="@+id/button_horoscope"
+            android:layout_marginTop="3dp"
+            android:layout_width="316dp"
+            android:layout_height="174dp"
+            android:background="@drawable/selector_page2_horoscope"
+            android:layout_toRightOf="@id/button_bank"
+			android:drawableTop="@drawable/horoscope"            
+            android:layout_below="@id/button_medicine"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_page2"
+            android:text="@string/horoscope" />
+        <Button
+            android:id="@+id/button_maadpay"
+            android:paddingTop="50dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="157dp"
+            android:layout_marginTop="3dp"
+            android:layout_height="174dp"
+            android:background="@drawable/selector_page2_maadpay"
+			android:drawableTop="@drawable/maadpay"            
+            android:layout_toRightOf="@id/button_medicine"
+            android:layout_above="@id/button_horoscope"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_page2"
+            android:text="@string/maad_pay" />
+        <Button
+            android:id="@+id/button_cook"
+            android:layout_width="157dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/selector_page2_cook"
+			android:drawableTop="@drawable/cook"            
+            android:layout_toRightOf="@id/button_maadpay"
+            android:layout_above="@id/button_horoscope"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_page2"
+            android:text="@string/cook" />
+        <Button
+            android:id="@+id/button_telemed"
+            android:layout_marginRight="3dp"
+            android:layout_width="157dp"
+            android:layout_height="174dp"
+            android:background="@drawable/selector_page2_telemed"
+			android:drawableTop="@drawable/telemedicine"            
+            android:layout_toRightOf="@id/button_service"
+            android:layout_above="@id/button_maadpay"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_page2"
+            android:text="@string/tele_med_" />
+        
+        <Button
+            android:id="@+id/button_weather"
+            android:layout_width="157dp"
+            android:layout_height="174dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/weather"
+            android:layout_toRightOf="@id/button_telemed"
+            android:layout_above="@id/button_cook"
+            android:textColor="@android:color/white"
+            android:text="@string/weather" />
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:src="@drawable/leftnav" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item  android:state_pressed="true">
+        <shape >
+            <solid android:color="@color/telemed_dark"/>
+        </shape>
+    </item>
+    
+    <item  android:state_focused="true">
+        <shape >
+            <gradient android:startColor="@color/telemed_light"
+                android:endColor="@color/telemed_dark"
+                android:angle="270"/>
+            
+            <stroke android:width="5dp"
+                android:color="@android:color/white"/>
+        </shape>
+    </item>
+    
+    <item  android:state_enabled="true">
+        <shape >
+            <gradient android:startColor="@color/telemed_light"
+                android:endColor="@color/telemed_dark"
+                android:angle="270"/>
+        </shape>
+    </item>
+
+</selector>

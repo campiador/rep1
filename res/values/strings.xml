@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SelectorTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="religious">Religious</string>
+    <string name="service">Service</string>
+    <string name="medicine">Medicine</string>
+    <string name="events">Events</string>
+    <string name="banks">Banks</string>
+    <string name="horoscope">Horoscope</string>
+    <string name="maad_pay">Maad Pay</string>
+    <string name="cook">Cook</string>
+    <string name="tele_med_">Tele Med.</string>
+    <string name="weather">Weather</string>
+
+</resources>
